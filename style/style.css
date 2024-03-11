@@ -279,8 +279,16 @@ fieldset {
 
 /** Css tamaño **/
 @media screen and (max-width: 1267px) {
-  .topnav .search-container button {
-    margin-right: 0px;
+  .topnav {
+    padding-bottom: 20px;
+    flex-direction: column;
   }
   
+  .article1 {
+    flex-direction: column;
+  }
+
+  .article2 {
+    flex-direction: column;
+  }
 }
