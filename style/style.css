@@ -291,4 +291,8 @@ fieldset {
   .article2 {
     flex-direction: column;
   }
+
+  .search-container form {
+    display: flex;
+  }
 }
