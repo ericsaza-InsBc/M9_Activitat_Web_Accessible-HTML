@@ -43,7 +43,6 @@ nav {
 
 .topnav {
   display: flex;
-  overflow: hidden;
   align-items: center;
   justify-content: space-between;
   margin-left: 17.5%;
@@ -54,7 +53,6 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: rgba(0, 65, 138);
   display: flex;
 }
@@ -277,4 +275,12 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+}
+
+/** Css tamaño **/
+@media screen and (max-width: 1267px) {
+  .topnav .search-container button {
+    margin-right: 0px;
+  }
+  
 }
