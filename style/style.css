@@ -146,7 +146,7 @@ section {
 /* Articles */
 .article {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 0px;
   margin-right: 0px;
 }
