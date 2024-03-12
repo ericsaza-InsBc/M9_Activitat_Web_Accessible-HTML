@@ -1,78 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Pàgina activitat M9.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pàgina activitat M9." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Accessibilitat</title>
-</head>
+  </head>
 
-<body>
-    <header role="banner">
-        <nav role="navigation">
-            <div class="topnav">
-                <div class="urls">
-                    <ul>
-                        <li><a href="index.html" class="brand">Brand</a></li>
-						<li><a href="Screenshos.html" role="menuitem">Screenshots</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a style="color: white;" href="contatcUs.html">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="search-container">
-                    <form>
-                        <input type="text" placeholder="Search">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+  <body>
+    <header role="banner" aria-label="Barrad e navegación de la página web">
+      <nav role="navigation">
+        <div class="topnav">
+          <div class="urls">
+            <ul>
+              <li><a href="index.html" class="brand">Brand</a></li>
+              <li>
+                <a href="screenshots.html">Screenshots</a>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li>
+                <a style="color: white" href="contatcUs.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-container">
+            <form>
+              <input type="text" placeholder="Search" />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main role="main">
-        <div class="container">
-            <form id="contact" action="" method="post">
-                <h3>Contact Us</h3>
-                <h4>Contact us today, and get reply with in 24 hours!</h4>
-                <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-            </form>
-        </div>
+      <div class="container">
+        <form id="contact" action="" method="post">
+          <h3>Contact Us</h3>
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" required autofocus />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" required />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" required />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your Web Site starts with http://"
+              type="url"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="Type your Message Here...."
+              required
+            ></textarea>
+          </fieldset>
+        </form>
+      </div>
     </main>
     <footer role="contentinfo">
-        <!-- Footer content goes here -->
+      <!-- Footer content goes here -->
     </footer>
     <script>
-        window.onload = () => {
-
-            // Afegim aria current a la pàgina actual
-            const currentPage = window.location.pathname.split('/').pop();
-            const links = document.querySelectorAll('.urls a');
-            links.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
-                    link.setAttribute('aria-current', 'page');
-                }
-            });
-        }
+      window.onload = () => {
+        // Afegim aria current a la pàgina actual
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".urls a");
+        links.forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.setAttribute("aria-current", "page");
+          }
+        });
+      };
     </script>
-</body>
-
+  </body>
 </html>
