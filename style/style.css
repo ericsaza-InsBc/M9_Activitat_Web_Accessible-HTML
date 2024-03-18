@@ -102,10 +102,10 @@ button[type='submit']:hover {
   border: white solid 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.image1 {
+.imatge-esquerra {
   margin-left: 20px;
 }
-.image2 {
+.imatge-dreta {
   margin-right: 20px;
 }
 
@@ -139,11 +139,11 @@ section {
   margin-right: 0px;
   padding-bottom: 3%;
 }
-.article1 {
+.article-esquerra {
   flex-direction: row;
 }
 
-.article2 {
+.article-dreta {
   flex-direction: row-reverse;
 }
 
@@ -300,11 +300,11 @@ footer {
     flex-direction: column;
   }
 
-  .article1 {
+  .article-esquerra {
     flex-direction: column;
   }
 
-  .article2 {
+  .article-dreta {
     flex-direction: column;
   }
 
@@ -316,10 +316,10 @@ footer {
     flex-wrap: wrap;
   }
 
-  .image1 {
+  .imatge-esquerra {
     margin-left: 0px;
   }
-  .image2 {
+  .imatge-dreta {
     margin-right: 0px;
   }
 
