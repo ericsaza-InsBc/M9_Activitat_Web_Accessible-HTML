@@ -59,7 +59,6 @@ nav {
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: rgba(46, 112, 183, 255);
   text-align: center;
@@ -72,19 +71,14 @@ nav {
   color: white;
 }
 
-.topnav .search-container {
-  float: right;
-}
-
 .topnav input[type="text"] {
   padding: 6px;
   font-size: 17px;
   border: none;
 }
 
-.topnav .search-container button {
+button[type='submit'] {
   border-radius: 5px;
-  float: right;
   padding: 6px 10px;
   margin-right: 16px;
   margin-left: 10px;
@@ -94,16 +88,7 @@ nav {
   cursor: pointer;
   background-color: rgba(5, 84, 184);
 }
-.topnav .search-container button:hover {
-  border-radius: 5px;
-  float: right;
-  padding: 6px 10px;
-  margin-right: 16px;
-  margin-left: 10px;
-  color: white;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+button[type='submit']:hover {
   background-color: rgba(5, 55, 117);
 }
 
@@ -144,11 +129,15 @@ section {
 }
 
 /* Articles */
+.extension-title {
+  padding-bottom: 3%;
+}
 .article {
   display: flex;
   align-items: center;
   margin-left: 0px;
   margin-right: 0px;
+  padding-bottom: 3%;
 }
 .article1 {
   flex-direction: row;
@@ -293,6 +282,17 @@ fieldset {
   color: #888;
 }
 
+/** Footer **/
+footer {
+  position: relative;
+  bottom: 0;
+  font-size: 20px;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
 /** Css tamaño **/
 @media screen and (max-width: 1267px) {
   .topnav {
@@ -308,7 +308,7 @@ fieldset {
     flex-direction: column;
   }
 
-  .search-container form {
+  .search-container {
     display: flex;
   }
 

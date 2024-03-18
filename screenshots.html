@@ -1,122 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Página actividad M9.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Página actividad M9." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Accessibilitat</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header role="banner" aria-label="Barrad e navegación de la página web">
-        <nav>
-            <div class="topnav">
-                <div class="urls">
-                    <ul>
-                        <li><a href="index.html" class="brand">Brand</a></li>
-                        <li><a style="color: white;" href="Screenshos.html">Screenshots</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contatcUs.html">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="search-container">
-                    <form role="search">
-                        <input type="text" placeholder="Search" aria-label="Search">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="topnav">
+          <div class="urls">
+            <ul>
+              <li><a href="index.html" class="brand">Brand</a></li>
+              <li><a style="color: white" href="#">Screenshots</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="contatcUs.html">Contact us</a></li>
+            </ul>
+          </div>
+          <form role="search">
+            <input type="text" placeholder="Search" aria-label="Search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
     </header>
     <main>
-        <section>
-            <article class="first">
-                <h1>WCAG Color contrast checker</h1>
-            </article>
-            <section class="article article1">
-                <article id="article">
-                    <h2>
-                        Screenshot Index Page
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.</p>
-                </article>
-                <img src="./img/screenshot_index.webp" width="400" alt="Captura index." class="image image1" aria-label="Captura index.">
-                <img src="./img/tritanomaly_test_index.webp" width="400" alt="Captura contact us." class="image image1" aria-label="Captura contact us.">
-            </section>
-            <section class="article article2">
-                <article id="article">
-                    <h2>
-                        Screenshot Contact Us page
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.</p>
-                </article>
-                <img src="./img/tritanomaly_test_contactus.webp" width="400" alt="Captura contact us." class="image image2" aria-label="Captura contact us.">
-                <img src="./img/screenshot_contactus.webp" width="400" alt="Captura contact us." class="image image2" aria-label="Captura contact us.">
-            </section>
-        </section>
-        <section>
-            <article class="first">
-                <h1>Are my colours Accessible</h1>
-            </article>
-            <section class="article article1">
-                <article id="article">
-                    <h2>
-                        Navbar
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.</p>
-                </article>
-                <img src="./img/coloraccessible_navbar.webp" width="400" alt="Captura index." class="image image1" aria-label="Captura index.">
-                <img src="./img/coloraccessible_navbar_input_button.webp" width="400" alt="Captura contact us." class="image image1" aria-label="Captura contact us.">
-            </section>
-            <section class="article article2">
-                <article id="article">
-                    <h2>
-                        Contact Us Form
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.</p>
-                </article>
-                <img src="./img/coloraccessible_form_text.webp" width="400" alt="Captura contact us." class="image image2" aria-label="Captura contact us.">
-                <img src="./img/coloraccessible_form_button.webp" width="400" alt="Captura contact us." class="image image2" aria-label="Captura contact us.">
-            </section>
-        </section>
+      <section>
+        <h1 class="extension-title">WCAG Color contrast checker</h1>
+        <article class="article article1">
+          <div id="article">
+            <h2>Screenshot Index Page</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <img
+            src="./img/screenshot_index.webp"
+            width="400"
+            alt="Captura index."
+            class="image image1"
+            aria-label="Captura index."
+          />
+          <img
+            src="./img/tritanomaly_test_index.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image1"
+            aria-label="Captura contact us."
+          />
+        </article>
+        <article class="article article2">
+          <div id="article">
+            <h2>Screenshot Contact Us page</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <img
+            src="./img/tritanomaly_test_contactus.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image2"
+            aria-label="Captura contact us."
+          />
+          <img
+            src="./img/screenshot_contactus.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image2"
+            aria-label="Captura contact us."
+          />
+        </article>
+      </section>
+      <section>
+        <h1 class="extension-title">Are my colours Accessible</h1>
+        <article class="article article1">
+          <div id="article">
+            <h2>Navbar</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <img
+            src="./img/coloraccessible_navbar.webp"
+            width="400"
+            alt="Captura index."
+            class="image image1"
+            aria-label="Captura index."
+          />
+          <img
+            src="./img/coloraccessible_navbar_input_button.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image1"
+            aria-label="Captura contact us."
+          />
+        </article>
+        <article class="article article2">
+          <div id="article">
+            <h2>Contact Us Form</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <img
+            src="./img/coloraccessible_form_text.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image2"
+            aria-label="Captura contact us."
+          />
+          <img
+            src="./img/coloraccessible_form_button.webp"
+            width="400"
+            alt="Captura contact us."
+            class="image image2"
+            aria-label="Captura contact us."
+          />
+        </article>
+      </section>
     </main>
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
+    <footer>&copy; Copyright 2024 | Eric Salado Zafra</footer>
 
-	
     <script>
-        window.onload = () => {
-
-            // Afegim aria current a la pàgina actual
-            const currentPage = window.location.pathname.split('/').pop();
-            const links = document.querySelectorAll('.urls a');
-            links.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
-                    link.setAttribute('aria-current', 'page');
-                }
-            });
-        }
+      window.onload = () => {
+        // Afegim aria current a la pàgina actual
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll(".urls a");
+        links.forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.setAttribute("aria-current", "page");
+          }
+        });
+      };
     </script>
-</body>
-
+  </body>
 </html>
